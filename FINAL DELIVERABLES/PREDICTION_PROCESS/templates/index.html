@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Efficient Water Quality Anaysis</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      html, body {
+      min-height: 100%;
+      background-image:url(waterr1.gif);
+      background-size:cover;
+      background-repeat: no-repeat;
+      }
+      body, div, form, input, select,textarea, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+      }
+      h1 {
+      position: absolute;
+      margin: 0;
+      font-size: 32px;
+      color: #fff;
+      z-index: 2;
+      }
+      h3 {
+      position: absolute;
+      margin: 0;
+      font-size: 20px;
+      bottom: 30px;
+      color: #fff;
+      z-index: 3;
+      }
+      h5 {
+      margin: 10px 0;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 100px;
+      margin: 0% 20%;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 0 20px 0 #095484; 
+      }
+      .banner {
+      position: relative;
+      height: 210px;
+      background-color: blue;  
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+      .banner::after {
+      content: "";
+      background-color: rgba(0, 200, 255, 0.4); 
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      }
+      input, select, textarea {
+      margin-bottom: 10px;
+      border: 3px solid #ccc;
+      border-radius: 30px;
+      border-color: blue;
+      border-color: rgba(0, 0, 255, 0.6); 
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      }
+      select {
+      width: 100%;
+      padding: 7px 0;
+      background: transparent;
+      }
+      textarea {
+      width: calc(100% - 10px);
+      padding: 5px;
+      }
+      .item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder, a {
+      color: #0296f5;
+      }
+      .item input:hover, .item select:hover, .item textarea:hover {
+      border: 1px solid transparent;
+      box-shadow: 0 0 6px 0 #0296f5;
+      color: #0296f5;
+      }
+      .item {
+      position: relative;
+      margin: 10px 0;
+      }
+      input[type="date"]::-webkit-inner-spin-button {
+      display: none;
+      }
+      .item i, input[type="date"]::-webkit-calendar-picker-indicator {
+      position: absolute;
+      font-size: 50px;
+      color: #080808;
+      }
+      .item i {
+      right: 2%;
+      top: 30px;
+      z-index: 1;
+      }
+      .question span {
+      margin-left: 30px;
+      }
+      span.required {
+      margin-left: 0;
+      color: red;
+      }
+      .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px; 
+      background: #0478c2;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background: #0666a3;
+      }
+      @media (min-width: 568px) {
+      .city-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      }
+      .city-item input {
+      width: calc(50% - 20px);
+      }
+      .city-item select {
+      width: calc(50% - 8px);
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="testbox">
+        <form action="login" method="post">
+      <div class="banner">
+        <h1>WATER QUALITY ANALYSIS</h1>
+        <h3>TEAM ID : PNT2022TMID04079</h3>
+      </div>
+      <div class="item">
+        <p>TEMPERATURE</p>
+        <input type="text" name="temp" required/>
+      </div>
+      <div class="item">
+        <p>D.O. (mg/l)</p>
+        <input type="text" name="do" id="do" required/>
+      </div>
+   <div class="item">
+    <p>pH</p>
+        <input type="text" name="ph" id="ph" required/>
+      </div>
+      <div class="item">
+        <p>CONDUCTIVITY (µmhos/cm)</p>
+        <input type="text" name="co" id="co" required/>
+      </div>        
+   <div class="item">
+    <p>B.O.D. (mg/l)</p>
+        <input type="text" name="bod" id="bod" required/>
+      </div>
+      <div class="item">
+        <p>NITRATENAN N+ NITRITENANN (mg/l)</p>
+        <input type="text" name="na" id="na" required/>
+      </div>
+
+   <div class="item">
+        <p>FECAL COLIFORM (MPN/100ml)</p>
+        <input type="text" name="Fec_col" required/>
+      </div>        
+   <div class="item">
+    <p>FECAL COLIFORM (MPN/100ml)</p>
+        <input type="text" name="tc" id="tc" required/>
+      </div>
+      <div class="item">
+        <p>YEAR</p>
+        <input type="text" name="year" id="year" required/>
+      </div>
+      <div><h2>{{showcase}}</h2></div>
+        <div class="btn-block">
+          <button type="submit" href="login" >PREDICT</button>
+        </div>
+    </form>
+    </div>
+  </body>
+</html>
