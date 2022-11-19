@@ -7,8 +7,4 @@ Sri Sairam Engineering College
 
 TEAM LEADER : NIRMAL RAJA K L 
 
-TEAM MEMBERS : JAGAN 
-
-               NISVANTH 
-               
-               HARSHAVARDAN
+TEAM MEMBERS : JAGAN, NISVANTH & HARSHAVARDAN
